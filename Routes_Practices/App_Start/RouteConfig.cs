@@ -18,6 +18,19 @@ namespace Routes_Practices
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute(
+                name: "TwoParams",
+                url: "{controller}/{action}/{param0}/{param1}",
+                defaults: new { controller = "TwoParams", action = "Index", param0 = UrlParameter.Optional, param1 = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
+                name:"Students",
+                url: "{controller}/{id}/{name}/{studentId}",
+                defaults: new { controller="Students", action="Index", id=UrlParameter.Optional, name=UrlParameter.Optional, studentId=UrlParameter.Optional },
+                constraints: new { id=@"\d+" }
+            );
         }
     }
 }

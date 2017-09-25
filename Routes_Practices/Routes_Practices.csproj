@@ -207,6 +207,8 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\StudentsController.cs" />
+    <Compile Include="Controllers\TwoParamsController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -359,6 +361,7 @@
     <Content Include="Content\components\visibility.min.js" />
     <Content Include="Content\components\visit.js" />
     <Content Include="Content\components\visit.min.js" />
+    <Content Include="Content\imgs\0.jpg" />
     <Content Include="Content\semantic.css" />
     <Content Include="Content\semantic.min.css" />
     <Content Include="Content\themes\basic\assets\fonts\icons.svg" />
@@ -408,6 +411,7 @@
     <None Include="Scripts\jquery-3.2.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\Cust\cust.js" />
     <Content Include="Scripts\jquery-3.2.1.js" />
     <Content Include="Scripts\jquery-3.2.1.min.js" />
     <Content Include="Scripts\jquery-3.2.1.slim.js" />
@@ -686,6 +690,8 @@
     <Content Include="semantic\less\collections\grid.less" />
     <Content Include="semantic\less\collections\form.less" />
     <Content Include="semantic\less\collections\breadcrumb.less" />
+    <Content Include="Views\TwoParams\Index.cshtml" />
+    <Content Include="Views\Students\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
